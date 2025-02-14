@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>SAN VALENTIN</title>
+    <style>
+        body {
+            background-color: #f9f9f9; /* Color de fondo suave */
+            font-family: Arial, sans-serif; /* Fuente más moderna */
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; /* Fondo blanco para el contenedor */
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+            max-width: 600px; /* Ancho máximo del contenedor */
+            margin: auto; /* Centrar el contenedor */
+        }
+        h1 {
+            color: #ff3366; /* Color del texto del encabezado */
+        }
+        .marco {
+            border: 5px solid #ff3366; /* Color y grosor del marco */
+            padding: 10px; /* Espacio entre el marco y la imagen */
+            border-radius: 15px; /* Bordes redondeados */
+            display: inline-block; /* Ajustar al tamaño de la imagen */
+            background-color: #fff; /* Color de fondo del marco */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+        img {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+        }
+        .sobre {
+            width: 100%; /* Ancho del sobre */
+            background-color: #fff; /* Color de fondo del sobre */
+            border: 2px solid #ff3366; /* Borde del sobre */
+            border-radius: 10px; /* Bordes redondeados */
+            padding: 20px; /* Espacio interno */
+            margin-top: 20px; /* Margen superior */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+            display: none; /* Ocultar el sobre inicialmente */
+        }
+        .boton {
+            background-color: #ff3366; /* Color del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+            margin-top: 20px; /* Margen superior */
+        }
+        .boton:hover {
+            background-color: #ff6699; /* Color del botón al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="11000679121036284802" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/khanov1-gif-11000679121036284802">Khanov1 GIF</a> from <a href="https://tenor.com/search/khanov1-gifs">Khanov1 GIFs</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1> ME ENCANTAS 🌹💕 </h1>
+        
+        <!-- Contenedor para la imagen con marco -->
+        <div class="marco">
+            <img src="C:\Users\USER\OneDrive\Escritorio\sv\san-valentin-proyecto\Imagenes\Tuti.jpeg" alt="Descripción de la imagen">
+        </div>
+
+        <!-- Contenedor para el sobre -->
+        <div class="sobre" id="sobre">
+            <h2>Tu mensaje:</h2>
+            <p id="mensaje">
+                A pesar de que ya casi no nos vemos como antes, quiero que sepas que sigues en mis pensamientos. Eres la primera persona en la que pienso en las mañanas y la última al dormir.
+            </p>
+            <p id="mensaje">
+                En un día como hoy, no puedo evitar recordar lo especial que eres para mí. Me encantaría volver a verte y abrazarte, bonita, y seguir escribiendo nuestra historia juntos.
+                "Me gustas por muchas razones… Por tu inteligencia y dedicación, por la pasión con la que haces cada cosa. Me gustan tus ojos, que reflejan tanta belleza y misterio; tu sonrisa, que ilumina hasta los días más grises; tu cabello y tu piel,tus besos y caricias. Pero, sobre todo, me gustas porque simplemente eres tú, única y especial." 💖
+            </p>
+            <p id="mensaje">
+                Espero poder salir contigo, reír, conocerte más y aprender de todo un poco para ser una mejor persona y poder ganarme tu cariño. 💖
+            </p>
+            <p id="mensaje">
+                Atentamente, Jonathan L.
+            </p>
+            <p id="mensaje">
+                14 de febrero de 2025
+            </p>
+        </div>
+
+        <!-- Botón para abrir el sobre -->
+        <button class="boton" id="boton" onclick="abrirSobre()">
+            <i class="fas fa-envelope"></i> Abrir mensaje
+        </button>
+    </div>
+
+    <script>
+        function abrirSobre() {
+            const sobre = document.getElementById('sobre');
+            const boton = document.getElementById('boton');
+            sobre.style.display = 'block'; // Mostrar el sobre
+            boton.innerText = 'Cerrar mensaje'; // Cambiar texto del botón
+            boton.setAttribute('onclick', 'cerrarSobre()'); // Cambiar función del botón
+        }
+
+        function cerrarSobre() {
+            const sobre = document.getElementById('sobre');
+            const boton = document.getElementById('boton');
+            sobre.style.display = 'none'; // Ocultar el sobre
+            boton.innerText = 'Abrir mensaje'; // Restablecer texto del botón
+            boton.setAttribute('onclick', 'abrirSobre()'); // Restablecer función del botón
+        }
+    </script>
+</body>
+</html>
